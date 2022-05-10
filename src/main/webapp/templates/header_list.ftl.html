@@ -1,0 +1,9 @@
+<p>Hello, ${username!"anonymous"}!</p>
+<#if (headers?size > 0)>
+<h2>Request Headers</h2>
+<ul>
+    <#list headers as header>
+    <li><b>${header.first}</b> = ${header.second}</li>
+    </#list>
+</ul>
+</#if>

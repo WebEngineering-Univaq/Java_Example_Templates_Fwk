@@ -1,0 +1,1 @@
+[<#list headers as header>{"header" : "${header.first?js_string}", "value": "${header.second?js_string}" }<#sep>,</#sep></#list>]

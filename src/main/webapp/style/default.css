@@ -1,0 +1,101 @@
+body,html {
+    width:100%;
+    max-width:100%; 
+    height:100%; /* IE */
+    max-height:100%; /* altri */
+    padding:0; 
+    margin:0; 
+    overflow:hidden; /* eliminiamo le scroll bars */
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 11pt;
+    background: #73A2BD;
+}
+
+.header {
+    position:absolute; 
+    margin:0; 
+    top:0; 
+    left:0; 
+    overflow:hidden;
+    right: 0;
+    height:50px;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    background-color: #53829D;
+    color: white;
+
+}
+
+.body {
+    overflow:auto; /* mostra le scroll bars */
+    position:fixed; 
+    top:60px; /* scopre l'header */
+    bottom:40px;  /* scopre il footer */
+    left:10px;
+    right:10px; /* si estende fino all'estrema destra */
+    background: white;
+    padding: 10px;
+}
+
+.footer {
+    position:absolute;
+    bottom:0; 
+    left:0;
+    right : 0;
+    top: auto;
+    overflow:hidden;
+    height:30px;        
+    font-size: 9pt;
+    text-align: center;
+    background-color: #73A2BD;
+    color: white;
+}
+
+* html body{ /* IE6 */
+             margin: 50px 0 30px 0;
+}
+
+* html .body{ /* IE6 */
+              height: 100%;
+              width: 100%;
+}
+
+* html .header, * html .footer{ /* IE6 */
+                                width: 100%;
+}
+
+input {
+    border: 1px solid #53829D;
+    background:  white;
+    font-size: 80%;
+}
+
+#topmenu {
+    background: #73A2BD;
+    color: white;
+    font-size: 80%;
+    text-align: right;
+    padding: 5px;
+ }
+
+ #topmenu a {
+     color: white;
+     font-weight: bold;
+     text-decoration: none;
+ }
+
+ #topmenu a:hover {
+     text-decoration: underline;
+ }
+
+ #topmenu ul {
+     list-style:none;
+ }
+
+ #topmenu li {
+     margin:0 10px;
+     padding:0;
+     display: inline;
+ }
+

@@ -7,12 +7,18 @@
     <body>
         <h1>TemplateResult and FailureResult examples</h1>
         <ul>
-            <li><a href="Pagina_senza_outline">Page generated from a template</a></li>
-            <li><a href="Pagina_con_outline">Page generated from a template with automatic outline</a></li>
-            <li><a href="Pagina_con_request_passing">Page generated from a template with data passed through ServletRequest</a></li>
-            <li><a href="Pagina_con_type">Page generated from a template with explicit content type</a></li>
-            <li><a href="Esportazione_json">The same page, rendered in JSON using a different template</a></li>
-            <li><a href="Pagina_errore">Page with an error handled by FailureResult</a></li>
+            <li><a href="Pagina_senza_outline">Page generated from a template</a>
+                <br/><small>This page is generated from a simple template, yet it uses some additional features of the TemplateResult class, e.g., automatic data model population through static web.xml entries and filler classes</small></li>
+            <li><a href="Pagina_con_outline">Page generated from a template with automatic outline</a>
+                <br/><small>This page is generated from a content template embedded in a main <em>outline</em> template</small></li>
+            <li><a href="Pagina_con_request_passing">Page generated from a template with data passed through ServletRequest</a>
+                <br/><small>the data model for this page is not explicitly passed but extracted from the HTTPServletRequest attributes</small></li>
+            <li><a href="Pagina_con_type">Page generated from a template with explicit content type</a>
+                <br/><small>When rendering this page, the default output content type (text/html) is overridden with text/plain</small></li>
+            <li><a href="Esportazione_json">The same page, rendered in JSON using a different template</a>
+                <br/><small>Here we use a different template to dynamically generate a JSON file with the same data presented in the webpage</small></li>
+            <li><a href="Pagina_errore">Page with an error handled by FailureResult</a>
+                <br/><small>This page shows how to use the FailureResult class to display application errors</small></li>
         </ul>
     </body>
 </html>

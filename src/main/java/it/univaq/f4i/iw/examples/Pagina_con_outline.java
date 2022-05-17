@@ -3,10 +3,7 @@ package it.univaq.f4i.iw.examples;
 import it.univaq.f4i.iw.framework.result.FailureResult;
 import it.univaq.f4i.iw.framework.result.TemplateResult;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,15 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class Pagina_con_outline extends HttpServlet {
 
-    private List getHeaderList(HttpServletRequest request) {
-        List<Pair> headers = new ArrayList();
-        Enumeration<String> names = request.getHeaderNames();
-        while (names.hasMoreElements()) {
-            String name = names.nextElement();
-            headers.add(new Pair<>(name, (String) request.getHeader(name)));
-        }
-        return headers;
-    }
+
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -43,7 +32,7 @@ public class Pagina_con_outline extends HttpServlet {
 
         try {
             Map data = new HashMap();
-            data.put("headers", getHeaderList(request));
+            data.put("headers", Utilities.getHeaderList(request));
             data.put("page_title", "Page with outline");
 
             TemplateResult res = new TemplateResult(getServletContext());

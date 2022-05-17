@@ -9,6 +9,9 @@ package it.univaq.f4i.iw.examples;
  * Vengono usati i generics per
  * rendere la classe parametrica
  * rispetto al tipo dei due valori.
+ * 
+ * @param <S>
+ * @param <T>
  *
  */
 public class Pair<S,T> {

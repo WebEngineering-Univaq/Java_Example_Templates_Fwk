@@ -1,4 +1,4 @@
-# Esempio_Templates_Fwk_Maven
+#  Java_Example_Templates_Fwk
 > The Freemarker template engine useb inside a simple rendering framework
 
 This example shows the TemplateResult class, an easy interface to the Freemarker functionalities which abstracts and automates much of the work needed to use this template engine as the view layer of a web application.
@@ -16,4 +16,4 @@ This is a Maven-based project. Simply download the code and open it in any Maven
 
 ---
 
-![University od L'Aquila](https://www.disim.univaq.it/skins/aqua/img/logo2021-2.png)
+![University of L'Aquila](https://www.disim.univaq.it/skins/aqua/img/logo2021-2.png)

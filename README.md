@@ -1,5 +1,5 @@
 #  Java_Example_Templates_Fwk
-> The Freemarker template engine useb inside a simple rendering framework
+> The Freemarker template engine used inside a simple rendering framework
 
 This example shows the TemplateResult class, an easy interface to the Freemarker functionalities which abstracts and automates much of the work needed to use this template engine as the view layer of a web application.
 

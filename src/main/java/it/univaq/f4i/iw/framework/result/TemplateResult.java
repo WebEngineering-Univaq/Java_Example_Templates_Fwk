@@ -15,6 +15,7 @@
  */
 package it.univaq.f4i.iw.framework.result;
 
+import freemarker.cache.JakartaWebappTemplateLoader;
 import freemarker.core.HTMLOutputFormat;
 import freemarker.core.JSONOutputFormat;
 import freemarker.core.XMLOutputFormat;
@@ -72,8 +73,10 @@ public class TemplateResult {
         //set the (context relative) directory for template loading
         if (context.getInitParameter("view.template_directory") != null) {
             cfg.setServletContextForTemplateLoading(context, context.getInitParameter("view.template_directory"));
+            //cfg.setTemplateLoader(new JakartaWebappTemplateLoader(context, context.getInitParameter("view.template_directory"))); //patch se usato con JakartaEE
         } else {
             cfg.setServletContextForTemplateLoading(context, "templates");
+            //cfg.setTemplateLoader(new JakartaWebappTemplateLoader(context, "templates")); //patch se usato con JakartaEE
         }
 
         //impostiamo un handler per gli errori nei template - utile per il debug

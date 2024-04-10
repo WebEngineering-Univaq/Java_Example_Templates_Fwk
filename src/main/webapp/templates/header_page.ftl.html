@@ -26,6 +26,6 @@
             </ul>
             </#if>
         </div>
-        <div class="footer">Copyright &copy; 2010 ${defaults.author}. Page compiled on ${compiled_on?datetime}. Java version: ${java_version}</div>
+        <div class="footer">Copyright &copy; 2010 ${defaults.author}. Page compiled on ${compiled_on.format('dd/MM/yyyy HH:mm:ss')}. Java version: ${java_version}</div>
     </body>
 </html>

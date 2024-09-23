@@ -10,7 +10,6 @@
     <name>Esempio_Templates_Fwk_Maven</name>
 
     <properties>
-        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
@@ -59,13 +58,13 @@
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
-            <version>2.3.32</version>            
+            <version>2.3.33</version>            
         </dependency>
         <!-- workaround per il supporto a java.time in Freemarker -->
         <dependency>
             <groupId>no.api.freemarker</groupId>
             <artifactId>freemarker-java8</artifactId>
-            <version>2.1.0</version>
+            <version>3.0.0</version>
         </dependency>
     </dependencies>
 

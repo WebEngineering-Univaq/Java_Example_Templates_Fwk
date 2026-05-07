@@ -71,11 +71,11 @@ public class TemplateResult {
         //impostiamo la directory (relativa al contesto) da cui caricare i templates
         //set the (context relative) directory for template loading
         if (context.getInitParameter("view.template_directory") != null) {
-            //cfg.setServletContextForTemplateLoading(context, context.getInitParameter("view.template_directory"));
-            cfg.setTemplateLoader(new freemarker.ext.jakarta.servlet.WebappTemplateLoader(context, context.getInitParameter("view.template_directory"))); //patch se usato con JakartaEE
+            cfg.setServletContextForTemplateLoading(context, context.getInitParameter("view.template_directory"));
+            //cfg.setTemplateLoader(new freemarker.ext.jakarta.servlet.WebappTemplateLoader(context, context.getInitParameter("view.template_directory"))); //patch se usato con JakartaEE
         } else {
-            //cfg.setServletContextForTemplateLoading(context, "templates");
-            cfg.setTemplateLoader(new freemarker.ext.jakarta.servlet.WebappTemplateLoader(context, "templates")); //patch se usato con JakartaEE
+            cfg.setServletContextForTemplateLoading(context, "templates");
+            //cfg.setTemplateLoader(new freemarker.ext.jakarta.servlet.WebappTemplateLoader(context, "templates")); //patch se usato con JakartaEE
         }
 
         //impostiamo un handler per gli errori nei template - utile per il debug
